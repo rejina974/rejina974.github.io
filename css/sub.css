@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+
+/***************************다팜 시작*****************************/
+/*서브 gnb뉴메뉴*/
+#snb {position: fixed; left: 25px; top: 100px; transition: right 0.5s; } 
+
+#snb ul li a {font-size: 10px; color: #a4aeb6; letter-spacing: -0.03em; text-transform: uppercase;} 
+
+#snb ul li ul li a:hover {opacity: 0.5;}
+#snb ul li ul li {margin-left: 6px; line-height: 12px; padding: 3px 0;}
+
+#snb>ul>li {position: relative; padding: 4px 0; line-height: 19px;}
+#snb>ul>li>ul>li {position: relative;}
+#snb>ul>li>a {position: relative; font-weight: bold; font-size: 12px; color: #1a2733; letter-spacing: -0.05em;}
+#snb>ul>li>a:hover {opacity: 0.8;}
+
+
+/*메인초기화*/
+#main {margin: 0 auto;}
+
+#main img {display: block; margin: 0 auto;}
+#main>img {width: 100%;}
+
+
+#main h2 {font-size: 40px; font-weight: bold; letter-spacing: -0.05em; color: #1a2733; text-align: center;}
+#main h3 {font-size: 20px; letter-spacing: -0.05em; color: #ff4332; margin-top: 40px;}
+#main p {font-size: 31px; letter-spacing: -0.05em; font-weight: bold; font-family:'Montserrat'; padding-bottom: 14px; color: #1a2733;}
+#main p.long_txt {font-family: 'Noto Sans'; font-size: 15px; font-weight: normal; line-height: 24px; color: #3a4a58;}
+#main h4 {font-size: 20px; letter-spacing: -0.03em; font-weight: bold; color: #3a4a58; font-family:'Montserrat';}
+
+
+
+
+/*****메인00:project*****/
+#main #main00 {overflow: hidden; margin: 0 auto; width: 900px; padding-top: 58px; margin-top: 2px; margin-bottom: 90px; position: relative;}
+#main #main00 h2 {text-align: left;}
+#main #main00 h3 {font-size: 25px; color: #1a2733; margin: 0;}
+#main #main00 p {font-size: 18px; font-family: 'Noto Sans'; color: #516270;  border-bottom: 1px solid #1a2733; width: 900px; padding-top: 15px; padding-bottom: 30px; font-weight: normal;}
+
+#main #main00 a {position: absolute; right: 0; top: 74px; color: #1a2733; font-size: 12px; letter-spacing: -0.03em; font-family:'Montserrat'; border: 2px solid #1a2733; width: 140px; height: 40px; line-height: 40px; text-align: center;}
+#main #main00 a.view_mobileWeb {top: 130px;}
+
+#main #main00 a:hover {color: #fff; border: 2px solid #1a2733; background: #1a2733;}
+
+
+#main #main00 table {color: #8996a0; font-size: 13px; letter-spacing: -0.05em; margin-top: 30px;}
+#main #main00 table tr.strong {font-size: 15px; color: #ff4332;}
+#main #main00 table tr td {padding-right: 100px; line-height: 22px;}
+
+
+/*****메인00*****/
+
+/*****메인01*****/
+#main #main01 {overflow: hidden; margin: 0 auto; width: 900px; margin-top: 60px; margin-bottom: 70px;}
+
+#main #main01 h2 {text-align: center;}
+
+/*****메인01 끝*****/
+
+
+/*****메인02*****/
+#main #main02 {overflow: hidden; margin: 0 auto; width: 900px; margin-bottom: 70px;}
+
+#main #main02 img {display: block; width: 80%; margin: 0 auto; padding-top: 20px;}
+/*****메인02 끝*****/
+
+
+/*****메인03*****/
+#main #main03 {overflow: hidden; margin: 0 auto; width: 900px; margin-bottom: 70px; }
+
+#main #main03 p strong {font-weight: bold;}
+#main #main03 img {display: block; width: 45%; margin: 0 auto; padding-top: 50px;}
+/*****메인03 끝*****/
+
+
+/*****메인04*****/
+#main #main04 {overflow: hidden; margin: 0 auto; width: 100%; background: #50b795; margin-bottom: 70px; padding-bottom: 40px;}
+#main #main04 .main04_in {width: 900px; margin: 0 auto;}
+
+#main #main04 h4 {margin-top: 40px; opacity: 0.6; color: #fff;}
+#main #main04 h3,#main #main04 p,#main #main04 p.long_txt {color: #fff;}
+
+#main #main04 img {display: block; width: 100%; margin: 0 auto; padding-top: 40px; padding-bottom: 20px;}
+
+#main #main04 img.type {width: 90%;}
+#main #main04 img.color {width: 70%;}
+
+/*****메인04 끝*****/
+
+
+/*****메인05*****/
+#main #main05 {overflow: hidden; margin: 0 auto; width: 900px; margin-bottom: 70px;}
+
+#main #main05 h4 {color: #3a4a58;}
+#main #main05 p.long_txt {color: #3a4a58;}
+#main #main05 img.bench {width: 100%; padding-top: 40px;}
+
+/*analysis*/
+#main #main05 h4.ana_tit {margin-top: 40px;}
+#main #main05 img.ana_img {display: block; width: 70%; margin: 0 auto; padding-top: 40px; padding-right: 100px;}
+
+/*****메인05 끝*****/
+
+/*****메인06*****/
+#main #main06 {overflow: hidden; margin: 0 auto; width: 900px; margin-bottom: 70px;}
+
+#main #main06 a {display: inline-block; width: 200px; margin-left: 20px; margin-top: 20px; position: relative; border-radius: 6px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); overflow: hidden; outline: none;}
+#main #main06 a:first-child {margin-left: 14px;}
+#main #main06 a img {width: 200px; display: inline-block;}
+
+#main #main06 a.arch01:hover:after, #main #main06 a.arch02:hover:after, #main #main06 a.arch03:hover:after, #main #main06 a.arch04:hover:after {content: 'VIEW'; font-weight: bold; font-size: 15px; color: #fff; letter-spacing: 0.35em; line-height: 162px; width: 200px; height: 162px; text-align: center; background: rgba(26,39,51,0.5); position: absolute; top: 0; left: 0;}
+/*****메인06 끝*****/
+
+
+/*****메인07*****/
+#main #main07 {overflow: hidden; width: 900px; margin: 0 auto; margin-bottom: 70px;}
+
+#main #main07 img {display: block; width: 80%; margin: 0 auto; padding-top: 10px;}
+/*****메인07 끝*****/
+
+
+/*****메인08*****/
+#main #main08 {overflow: hidden; width: 900px; margin: 0 auto; margin-bottom: 70px;}
+
+#main #main08 img {display: block; width: 80%; margin: 0 auto; padding-top: 30px;}
+/*****메인08 끝*****/
+
+
+/*****메인09*****/
+#main #main09 {overflow: hidden; width: 100%; margin: 0 auto; background: #50b795; margin-bottom: 70px; padding-bottom: 60px;}
+#main #main09 .main09_in {width: 900px; margin: 0 auto;}
+
+#main #main09 h4 {margin-top: 40px; opacity: 0.6;}
+#main #main09 h3, #main #main09 p {color: #fff;}
+
+#main #main09 .popup-gallery {padding-top: 30px;}
+#main #main09 a {display: inline-block; width: 400px; margin-left: 30px; position: relative; outline: none; }
+#main #main09 a:first-child {margin-left: 14px;}
+#main #main09 a img {width: 400px; display: inline-block;}
+
+#main #main09 a.frame01:hover:after, #main #main09 a.frame02:hover:after {content: ''; width: 400px; height: 254px; background: rgba(255,255,255,0.3); border-radius: 6px; box-shadow: 2px 2px 2px rgba(0,0,0,0.05); overflow: hidden; outline: none; position: absolute; top: 0; left: 0;}
+/*****메인09 끝*****/
+
+
+/*****메인10*****/
+#main #main10 {overflow: hidden; width: 900px; margin: 0 auto; margin-bottom: 70px;}
+
+#main #main10 img.Illust {width: 280px;}
+#main #main10 img {display: inline-block; width: 250px; margin-left: 115px; margin-top: 30px;}
+/*****메인10 끝*****/
+
+
+/*****메인11*****/
+#main #main11 {overflow: hidden; width: 900px; margin: 0 auto; margin-bottom: 70px;}
+#main #main11 p {padding-bottom: 30px;}
+
+#main #main11 img {display: block; width: 100%;}
+#main #main11 img.stationary {display: inline-block; float: left; height: 300px; width: 50%;}
+#main #main11 img.phone_app {width: 80%; margin: 0 auto; margin-top: 50px;}
+/*****메인11 끝*****/
+
+
+/*****메인12*****/
+#main #main12 {overflow: hidden; width: 900px; margin: 0 auto; margin-bottom: 70px; position: relative;}
+#main #main12 p {margin-bottom: 15px;}
+
+#main12 a {display: inline-block; width: 420px; float: left; margin-left: 30px; box-shadow: 1px 1px 5px rgba(0,0,0,0.15); border-radius: 10px; position: relative; cursor: pointer; outline: none;}
+
+#main12 img {width: 420px;}
+
+#main12 a.web_link01 {margin-left: 15px;}
+#main12 a.web_link03 {margin-left: 15px; position: relative; top: -314px; left: 0;}
+#main12 a.web_link04 {margin-top: 30px;}
+
+#main12 a.web_link01:hover:after, #main12 a.web_link02:hover:after, #main12 a.web_link03:hover:after, #main12 a.web_link04:hover:after {content: 'VIEW INTERACTION'; font-weight: bold; font-size: 16px; color: #fff; letter-spacing: 0.35em; line-height: 5555%; width: 420px; height: 100%; text-align: center; background: rgba(26,39,51,0.5); border-radius: 6px; position: absolute; top: 0; left: 0; overflow: hidden;}
+
+img.mfp-img {max-height: 100% !important; max-width: 800px !important;}
+/*****메인12 끝*****/
+
+
+/*****메인13*****/
+#main #main13 {overflow: hidden; width: 900px; margin: 0 auto; margin-bottom: 16px; position: relative;}
+
+#main #main13 a.view_web, #main #main13 a.view_mobileWeb {color:#3a4a58; font-size: 20px; font-weight: bold; letter-spacing: -0.05em; border: 3px solid #3a4a58; padding: 14px 0; width: 236px; display: block; text-align: center; margin: 0 auto; margin-top: 20px;}
+#main #main13 a.view_mobileWeb {top: 76px;}
+
+#main #main13 a.view_web:hover, #main #main13 a.view_mobileWeb:hover {color: #fff; border: 3px solid #3a4a58; background: #3a4a58;}
+/*****메인13 끝*****/
+
+/***************************다팜 끝*****************************/
+
+
+
+
+
+
+/***************************커피빈 시작*****************************/
+#main #main02 h4 {color: #3a4a58;}
+
+#main #main02 h4#rede {margin-top: 80px; margin-bottom: 20px;}
+#main #main02 img {padding-bottom: 20px; width: 100%;}
+/***************************커피빈 끝*****************************/
+
+
+/******************************tbs efm시작**************************/
+#main #main00 h2 span {font-weight: normal;}
+#main #main01 img {display: block; margin: 0 auto; padding-top: 20px; padding-bottom: 0; width: 80%;}
+
+
+#main #tbs01 h3 {margin-top: 0;}
+
+
+#main #tbs01 {overflow: hidden; margin: 0 auto; width: 100%; background: #dddddd; margin-bottom: 70px; padding-bottom: 74px;}
+#main #tbs01 .tbs01_in {width: 900px; margin: 0 auto;}
+#main #tbs01 img {width: 80%; padding-top: 20px;}
+
+
+/*in 엘리먼트 초기화*/
+#main #tbs02 .video {text-align: center; margin-bottom: 50px; }
+
+
+#main #tbs02 {overflow: hidden; margin: 0 auto; width: 900px; margin-bottom: 10px; background: none;}
+#main #tbs01 h3 {font-size: 20px; letter-spacing: -0.05em; color: #ff4332; margin-top: 40px;}
+#main #tbs01 h4 {color: #3a4a58;}
+#main p {font-size: 31px; letter-spacing: -0.05em; font-weight: bold; font-family:'Montserrat'; padding-bottom: 14px; color: #1a2733;}
+#main #tbs01 p.long_txt {color: #3a4a58;}
+/*in 엘리먼트 초기화 끝*/
+
+#main #tbs02 {padding-bottom: 48px; overflow: hidden;}
+
+#main #tbs02 {width: 900px; margin: 0 auto;}
+#main #tbs02 h3 {margin-top: 0;}
+#main #tbs02 h4 {padding-bottom: 30px;}
+
+#main #tbs02 img.l_img {display: inline-block; width: 49%; float: left; margin-right: 14px; padding-top: 14px; padding-bottom: 0;}
+
+#main #tbs02 img.r_img {display: inline-block; width: 49%; float: left; margin-right: 14px; padding-top: 14px; padding-bottom: 0; margin-right: 0;}
+/******************************tbs efm끝**************************/
+
+
+
+/*******************lesportsac 시작***********************/
+#main #lesportsac00 h2, #main #lesportsac00 h3, #main #lesportsac00 p {color: #fff; border-color: #fff;}
+#main #lesportsac00 table {color: #fff;}
+#main #lesportsac00 table tr.strong {color: #fff;}
+
+
+#main #lesportsac00 .view_web {color: #fff; border-color: #fff;}
+#main #lesportsac00 .view_web:hover {background: #fff; color: #0099a1; border-color: #fff;}
+
+#main #main01 #lesportsac01 img.bottom_img {padding-bottom: 60px;}
+#main #main01 #lesportsac01 p {color: #fff;}
+#main #main01 #lesportsac01 a.view_web {color:#fff; font-size: 20px; font-weight: bold; letter-spacing: -0.05em; border: 3px solid #fff; padding: 14px 0; width: 236px; display: block; text-align: center; margin: 0 auto; margin-top: 20px;}
+#main #main01 #lesportsac01 a.view_web:hover {background: #fff; color: #0099a1; border-color: #fff;}
+/***********************lesportsac 끝*********************/
+
+
+
+/*******************민언련(minju) 시작***********************/
+#main #main01 img.s_img {width: 40%; padding-top: 36px;}
+#main .minju {margin-bottom: -46px;}
+
+#main #main02 img.minju02_img {width: 90%; padding-top: 22px; padding-bottom: 0;}
+
+#main #main05 h4.minju_h4 {padding-top: 80px;}
+#main #main05 img.normal_img {width: 60%; padding-top: 50px;}
+#main #main05 img.normal_img2 {width: 70%; padding-top: 40px;}
+#main #main05 img.s_img {width: 40%; padding-top: 36px;}
+
+#main #main06 img.l_img {display: inline-block; width: 49%; float: left; margin-right: 14px; padding-top: 14px; padding-bottom: 0;}
+
+#main #main06 img.r_img {display: inline-block; height: 444px; float: left; margin-right: 14px; padding-top: 14px; padding-bottom: 0; margin-right: 0;}
+
+#main #main06 img.normal_img {width: 100%; padding-top: 30px;}
+/*******************민언련(minju) 끝***********************/
+
+
+
+/*******************폰타나(fontana)***********************/
+#main05 p.longtxt_fontana {font-family: 'Noto Sans'; font-size: 15px; font-weight: normal; line-height: 24px; color: #3a4a58; padding-top: 6px;}
+
+#main #main05 img.l_img {display: inline-block; width: 49%; float: left; margin-right: 14px; padding-top: 14px; padding-bottom: 0;}
+
+#main #main05 img.r_img {display: inline-block; width: 49%; float: left; margin-right: 14px; padding-top: 14px; padding-bottom: 0; margin-right: 0;}
+/*****************폰타나(fontana) 끝*******************/
+
+
+
+/***************셀렉션(selction),희망가게,소개책자************/
+
+/************셀렉션(selction),희망가게,소개책자 끝**********/
+
+
+
+/************************성공회대***************************/
+#main #main06 h4.seongong06 {padding-top: 20px;}
+#main #main06 h4.seongong06_2 {padding-top: 60px;}
+
+#main #tbs01 img.l_img {display: inline-block; width: 50%; float: left; padding-top: 14px; padding-bottom: 0;}
+
+#main #tbs01 img.r_img {display: inline-block; width: 50%;padding-top: 14px; padding-bottom: 0; margin-right: 0; float: left;}
+
+
+#main #tbs02 img.l_img2 {display: inline-block; width: 50%; float: left; padding-bottom: 0;}
+
+#main #tbs02 img.r_img2 {display: inline-block; width: 50%; float: left; padding-bottom: 0; margin-right: 0;}
+
+#main #main08 img.normal_img {width: 100%; margin: 0 auto; display: block;}
+#main #main08 img.l_img {width: 50%; margin: 0 auto; display: block; float: left;}
+/***********************성공회대 끝*************************/
+
+
+
+/*******************3D & Character*********************/
+#main #main05 img.img3d_big {width: 100%; padding-bottom: 50px;}
+#main #main05 p.long_txt3 {padding-top: 10px; font-family: 'Noto Sans'; font-size: 15px; font-weight: normal; line-height: 24px; color: #3a4a58;}
+
+#main #main05 p.ch3dtit01 {padding-bottom: 44px;}
+#main #main05 h4.ch3dpaddtop {padding-top: 20px;}
+
+
+#main #main06 img.img3d_big {width: 100%; padding-bottom: 10px; padding-top: 20px;}
+#main #main06 p.long_txt3 {padding-top: 10px; font-family: 'Noto Sans'; font-size: 15px; font-weight: normal; line-height: 24px; color: #3a4a58;}
+
+#main #main06 p.ch3dtit01 {padding-bottom: 44px;}
+#main #main06 h4.ch3dpaddtop {padding-top: 20px;}
+/*******************3D & Character 끝*********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

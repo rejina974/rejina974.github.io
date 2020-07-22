@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+
+body {min-width:1100px;}
+
+#main {width: 1100px; padding: 0 20px; margin:0 auto;}
+
+#main ul li p {font-size: 13px; color: #3a4a58; font-family: 'Noto Sans'; height: 96px; letter-spacing: -0.03em;}
+#main ul li p span {font-size: 12px; color: #8996a0; font-family:'Montserrat'; letter-spacing: -0.03em;}
+#main h2 {font-size: 50px; font-weight: bold; color: #908ccb; height: 88px; letter-spacing: -0.05em; }
+
+
+/***********hello 시작**********/
+#main .hello {overflow: hidden; margin: 0 auto; width: 1100px; padding-top: 114px;}
+
+#main .hello>a {float: right; color: #c7bed3; font-size: 15px; margin-top: -52px;} 
+#main .hello>a img {width: 16px; padding-left: 8px;}
+#main .hello>a:hover {opacity: .5;}
+
+#main .hello ul li {height: 94px;}
+#main .hello ul li h3 {font-size: 20px; color: #908ccb; line-height: 40px; letter-spacing: -0.05em; }
+
+#main .hello ul li.last_hello {height: 380px;}
+#main .hello ul li p.long_height {height: 174px;}
+
+
+/***********hello 끝**********/
+
+
+/***********Expreince 시작**********/
+#main .expri {margin: 0 auto; width: 1100px; overflow: hidden; padding-top: 50px; position: relative;}
+
+
+/*Experience 경력 나열 우측*/
+@keyframes fadeIn_expri {
+	0% {display: none; opacity: 0;}
+	30% {display: block; opacity: 1;}
+}
+
+
+#main .expri .expri_txt {margin-left: 100px; margin-top: 20px; animation: fadeIn_expri 4s ease-in-out; animation-fill-mode:forwards;}
+#main .expri .expri_txt ul li {height: 102px;}
+#main .expri .expri_txt ul li h4 {color: #a6a2c6; font-size: 15px; letter-spacing: -0.03em;}
+#main .expri .expri_txt ul li p strong {font-weight: bold;}
+
+#main .expri .expri_txt ul li.right_txt {float: left; padding-right: 40px;}
+#main .expri .expri_txt ul li.long_txt {margin-bottom: 60px;}
+#main .expri .expri_txt ul li.short_txt {height: 68px;}
+
+/*Experience 좌측 연도 스타일*/
+#main .expri .year {overflow: hidden; position: absolute; top: 0; left: 0; width: 77px; height: 1100px;}
+#main .expri .year a {display: block; border: 3px solid #908ccb; color: #908ccb; background: #fff; font-weight: bold; text-align: center; width: 70px; height: 70px; line-height: 72px; border-radius: 80px; cursor: default; position: absolute; top: 150px; left: 0; animation-fill-mode:forwards;}
+
+@keyframes fadeIn_year {
+	0% {display: none; opacity: 0;}
+	10% {display: block; opacity: 1;}
+}
+
+#main .expri .year a.year_2016 {animation: fadeIn_year 1s;}
+#main .expri .year a.year_2015 {top: 354px; animation: fadeIn_year 6s;} 
+#main .expri .year a.year_2014 {top: 720px; animation: fadeIn_year 12s;} 
+#main .expri .year a.year_2013 {top: 990px; animation: fadeIn_year 18s;} 
+
+@keyframes ex_line {
+	0% {height: 0px;}
+	100% {height: 850px;}
+}
+
+#main .expri .year .line {border-left: 3px solid #908ccb; height: 850px; position: absolute; left: 38px; top: 156px; z-index: -1; animation: ex_line 2s ease-in-out; animation-fill-mode:forwards;}
+/***********Expreince 끝**********/
+
+
+/***********Skill 시작**********/
+#main .skill {margin: 0 auto; width: 1100px; overflow: hidden; padding-top: 50px; position: relative;}
+#main .skill h2 {margin-bottom: 24px;}
+
+#main .skill table.skill_txt tr {line-height: 28px;}
+#main .skill table.skill_txt tr td {color: #3a4a58; font-size: 13px; letter-spacing: -0.04em; padding-right: 280px; position: relative;}
+#main .skill table.skill_txt tr td.tit {color: #c7bed3; font-size: 20px; letter-spacing: -0.02em; padding-bottom: 5px;}
+
+
+/*skill bar 스타일*/
+#main .skill table.skill_txt tr td a {display: inline-block; border-top: 3px solid #8996a0; width: 140px; position: absolute; letter-spacing: 122px; top: 13px; left: 120px; text-indent: -9999px; cursor: default;}
+
+#main .skill table.skill_txt tr td a.web {width: 100px;}
+#main .skill table.skill_txt tr td a.HT {width: 140px;}
+#main .skill table.skill_txt tr td a.illust {width: 135px;}
+#main .skill table.skill_txt tr td a.uiux {width: 80px;}
+#main .skill table.skill_txt tr td a.css {width: 110px;}
+#main .skill table.skill_txt tr td a.inde {width: 90px;}
+#main .skill table.skill_txt tr td a.branding {width: 110px;}
+#main .skill table.skill_txt tr td a.js {width: 40px;}
+#main .skill table.skill_txt tr td a.dream {width: 80px;}
+#main .skill table.skill_txt tr td a.mo3d {width: 70px;}
+#main .skill table.skill_txt tr td a.jquery {width: 70px;}
+#main .skill table.skill_txt tr td a.sblime {width: 100px;}
+#main .skill table.skill_txt tr td a.edito {width: 140px;}
+#main .skill table.skill_txt tr td a.afec {width: 60px;}
+#main .skill table.skill_txt tr td a.blender {width: 95px;}
+#main .skill table.skill_txt tr td a.max3d {width: 60px;}
+#main .skill table.skill_txt tr td a.st4ux {width: 95px;}
+#main .skill table.skill_txt tr td a.jutho {width: 100px;}
+/***********Skill 끝**********/
+
+
+/***********contact me 시작**********/
+#main .contact {overflow: hidden; margin: 0 auto; width: 1100px; padding-top: 50px;}
+#main .contact h4 {color: #c7bed3; font-size: 20px; letter-spacing: -0.02em;}
+#main .contact p {color: #8996a0; font-size: 13px; letter-spacing: -0.04em;}
+
+#main .contact p strong {color: #3a4a58; font-size: 13px; letter-spacing: -0.02em;}
+/***********contact me 끝**********/
+
+
+#main>a.project {color:#3a4a58; font-size: 25px; font-weight: bold; letter-spacing: -0.05em; border: 3px solid #3a4a58; padding: 8px 0; width: 180px; display: block; text-align: center; margin: 0 auto; margin-top: 70px;}
+#main>a.project:hover {background: #3a4a58; color: #fff;}
+
+
+#main a.top_btn>svg {margin-top: 30px;}

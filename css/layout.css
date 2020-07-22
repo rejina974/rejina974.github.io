@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body,input,button,select,textarea {font-family:'맑은고딕','Montserrat',arial,sans-serif; outline:none;}
+body {min-width:1100px;}
+
+::-moz-selection {
+background-color: #3a4a58;
+color: #fff;
+}
+
+::selection {
+background-color: #3a4a58;
+color: #fff;
+}
+
+.si-icons span {
+	display: block;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute; left: 0; top: 0;
+	z-index: 1;
+}
+
+.si-icons span svg {width: 40px; margin-top: -10px; margin-left: 5px;}
+
+
+.header_con {position: fixed; left: -550px; top: 0; z-index:10; width: 550px; height: 100%; background: #ff4332; z-index: 40; padding-top: 140px;}
+.header_con a {font-weight: bold; color: #fff; font-size: 60px; letter-spacing: -0.05em; display: block; margin-left: 50px;margin-top: 30px;}
+
+
+/*하단에있는 상단스크롤버튼 */
+#main a.top_btn {display: block; height: 100%;}
+#main a.top_btn>svg {width: 60px; cursor: pointer; transform: rotateZ(180deg); display: block; margin:0 auto; margin-top: 90px;}

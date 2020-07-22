@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>이지은 포트폴리오</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/svgicons-config.js"></script>
+<script src="js/svgicons.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(document).ready(function(){
+	//메인비주얼 메뉴 버튼 색변화 (처음에만 보이고 나중에 가리기, 마우스 올리면 나타나기)
+	$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		$('#snb>ul>li').mouseenter(function(){
+			$('#snb>ul>li').stop().animate({opacity: '1'}, 200)
+		});
+		$('#snb>ul>li').mouseleave(function(){
+			$('#snb>ul>li').stop().animate({opacity: '0'}, 200)
+		});
+
+    $(window).scroll(function(e){
+		num=$(this).scrollTop();
+			e.preventDefault();
+		if(num>=0 && num<760){
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		} else if(num>=760 && num<2200) {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'1'},50);
+			$('#snb>ul>li>a').css({'color':'#1a2733'});
+			$('#snb>ul>li>ul>li a').css({'color':'#a4aeb6'});
+
+		} else if(num>=2200 && num<3900) {
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
+			$('#snb>ul>li a').css({'color':'white'});
+
+		} else if(num>=3900 && num<6900) {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li>a').css({'color':'#1a2733'});
+			$('#snb>ul>li>ul>li a').css({'color':'#a4aeb6'});
+
+		} else if(num>=6900 && num<7600) {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
+			$('#snb>ul>li a').css({'color':'white'});
+
+		} else {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li>a').css({'color':'#1a2733'});
+			$('#snb>ul>li>ul>li a').css({'color':'#a4aeb6'});
+		}
+	});
+});	
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>HOME</span></a>
+				<a href="index.html#main"><i class="fa fa-fw fa-bell-o"></i><span>MY PROJECT</span></a>
+				<a href="about_me.html"><i class="fa fa-fw fa-envelope-o"></i><span>ABOUT ME</span></a>
+			</div>
+		</nav>
+	</div>
+	<section class="si-icons si-icons-easing" id="open-button">
+		<span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+	</section>
+	<script>
+		(function() {
+			// initialize all
+			
+			[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+				var svgicon = new svgIcon( el, svgIconConfig );
+			} );
+			new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+		})();
+	</script>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/main.js"></script>
+<div id="snb">
+	<ul>
+		<li class="snb01"><a href="#main00">PROJECT</a></li>
+		<li class="snbBic01"><a href="#main01">BRANDING</a>
+			<ul>
+				<li><a href="#main02">Research</a></li>
+				<li><a href="#main03">Brand Naming</a></li>
+				<li><a href="#main04">Brand Guideline</a></li>
+			</ul>
+		</li>
+		<li class="snbBic02"><a href="#main05">UI/UX</a>
+			<ul>
+				<li><a href="#main05">Research</a></li>
+				<li><a href="#main06">Info. Architecture</a></li>
+				<li><a href="#main07">Ideation</a></li>
+				<li><a href="#main08">Design Direction</a></li>
+				<li><a href="#main09">Content Wireframe</a></li>
+				<li><a href="#main10">GUI/Illustration</a></li>
+				<li><a href="#main11">Mockup</a></li>
+				<li><a href="#main12">Web Design</a></li>
+			</ul>
+		</li>
+		<li class="snb02"><a href="#main12">WEB DESIGN</a></li>
+		<li class="snb_back"><a href="index.html#main">BACK TO WORK</a></li>
+	</ul>
+</div>
+<div id="main">
+	<img src="images/thumbs_big01.jpg" alt="">
+	<div id="main00">
+		<h2>내 손안의 그린 농장 다팜</h2>
+		<h3>DAFARM</h3>
+		<p>생활협동조합 통합 쇼핑몰 서비스 브랜딩과 웹 사이트 구축 프로젝트</p>
+		<a class="view_web" target="_blank" href="http://jaynee974.dothome.co.kr/dafarm/">View Website</a>
+		<a class="view_mobileWeb" target="_blank" href="http://jaynee974.dothome.co.kr/m_dafarm/">View Movbile Web</a>
+		<table>
+			<tr class="strong">
+				<td>PERSONAL PROJECT</td>
+				<td>DATE</td>
+			</tr>
+			<tr>
+				<td>Branding</td>
+				<td>2015. 03. - 2015. 04.  Branding</td>
+			</tr>
+			<tr>
+				<td>UI/UX</td>
+				<td>2016. 04. 01. - 2016. 04. 28.  UI/UX, Web Design&amp;Publishing</td>
+			</tr>
+			<tr>
+				<td>Web Design</td>
+			</tr>
+			<tr>
+				<td>Web Publishing</td>
+			</tr>
+		</table>
+	</div>
+	<div id="main01">
+		<h2>BRANDING</h2>
+		<h3>The Question.</h3>
+		<p>소비자에게 유기농먹거리를 손쉽게 제공할 수 있는 방법이 무엇일까?</p>
+		<p class="long_txt">우리나라의 생활협동조합은 직거래를 통해 저렴한 가격에 유기농 상품을 판매하고 있습니다. 하지만 일반 마트에 비해 활성화되지 않고 있습니다. 때문에 조합원과 일반 소비자들이 유기농먹거리를 편리하게 구매할 수 있도록 다팜이라는 브랜드를 만들었습니다. 다팜은 생활협동조합 통합 쇼핑몰로, 제휴맺은 생활협동조합의 질좋은 상품과 유기농 작물을 한번에 구매하여 받아 볼 수 있으며, 모바일 쿠폰으로 결제서비스를 제공하는 등 소비자에게 상품을 손쉽게 제공할 수 있는 솔루션입니다. 더불어 유기농먹거리의 원산지와 생산과정을 투명하게 공개하여 안심 먹거리를 실천하고 있습니다.</p>
+	</div>
+	<div id="main02">
+		<h3>01.</h3>
+		<p>Research</p>
+		<p class="long_txt">새로운 조합원 유입이 용이하도록 우리나라의 주요한 생활협동조합을 선발하여 제휴를 맺는다고 가정했습니다. 이 결과를 토대로 리서치한 브랜드의 공통점을 조합, 분석하여 다팜 브랜딩에 참조하였습니다.</p>
+		<img src="images/dafarm_01.jpg" alt="">
+	</div>
+	<div id="main03">
+		<h3>02.</h3>
+		<p>Brand Naming</p>
+		<p class="long_txt">DA FARM의 팜(FARM)은 팔다의 뜻인 Sell과 농장이라는 뜻의 Farm을 의미합니다. 마찬가지로 다(DA)는 많을 다(多)와 모두 다(All)의 뜻을 내포합니다. 결론적으로 <strong>다양한 상품을 판매하는 농장</strong>이라는 중의적인 의미로 네이밍하고자 하였습니다. 내 손안에 그린 농장이라는 슬로건은 간편함, 유기농이라는 뜻을 표현하였습니다.</p>
+		<img src="images/dafarm_02.jpg" alt="">
+	</div>
+	<div id="main04">
+		<div class="main04_in">
+			<h3>03.</h3>
+			<p>Brand Guideline</p>
+			<p class="long_txt">다팜의 BI는 영문 로고타입으로 상품을 돋보일 수 있도록 심플하게 디자인하였습니다. 동시에 친환경적인 이미지를 나타내고자 로고 처음의 D를 잎사귀로 형상화하였습니다. 제품의 주목성을 위해 산세리프를 타입페이스로 규정하였고 친환경브랜드의 특성을 부각시키기 위해 자연을 연상시키는 그린계열의 유사색조와 보색을 강조, 보조색으로 사용하여 다팜만의 컬러시스템을 완성하였습니다. 다팜은 아래의 가이드라인을 따릅니다.</p>
+			<h4 class="white">1) Structure</h4>
+			<img src="images/dafarm_03.jpg" alt="">
+			<h4 class="white">2) Typeface</h4>
+			<img class="type" src="images/dafarm_04.jpg" alt="">
+			<h4 class="white">3) Color</h4>
+			<img class="color" src="images/dafarm_05.jpg" alt="">
+		</div>	
+	</div>
+	<div id="main05">
+		<h2>UI/UX</h2>
+		<h3>01.</h3>
+		<p>Research</p>
+		<h4>1) Bench Marking</h4>
+		<p class="long_txt">아이쿱생협, 한살림의 유저인터페이스를 바탕으로 이마트와 신세계백화점에서 사용자 경험을 벤치마킹 하였습니다. 그 외에 현대몰, KFC in america, J.HORNIG, Google 지도,  홈CC의 웹사이를 참조하였습니다.</p>
+		<img class="bench" src="images/dafarm_06.jpg" alt="">
+		<h4 class="ana_tit">2) Analysis</h4>
+		<img class="ana_img" src="images/dafarm_07.jpg" alt="">
+	</div>
+	<div id="main06">
+		<h3>02.</h3>
+		<p>Information Architecture</p>
+		<div class="html-code grid-of-images">
+      		<div class="popup-gallery">
+				<a class="arch01" title="Information Architecture"  href="images/dafarm_08.jpg"><img src="images/dafarm_08.jpg" alt=""></a>
+				<a class="arch02" title="Information Architecture"  href="images/dafarm_09.jpg"><img src="images/dafarm_09.jpg" alt=""></a>
+				<a class="arch03" title="Information Architecture"  href="images/dafarm_10.jpg"><img src="images/dafarm_10.jpg" alt=""></a>
+				<a class="arch04" title="Information Architecture"  href="images/dafarm_11.jpg"><img src="images/dafarm_11.jpg" alt=""></a>
+			</div>
+			<script type="text/javascript">
+			    $(document).ready(function() {
+			        $('.popup-gallery').magnificPopup({
+			          delegate: 'a',
+			          type: 'image',
+			          tLoading: 'Loading image #%curr%...',
+			          mainClass: 'mfp-img-mobile',
+			          gallery: {
+			            enabled: true,
+			            navigateByImgClick: true,
+			            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			          },
+			          image: {
+			            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			            titleSrc: function(item) {
+			              return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+			            }
+			          }
+			        });
+		   		});
+  			</script>	
+		</div>
+	</div>
+	<div id="main07">
+		<h3>03.</h3>
+		<p>Ideation</p>
+		<img src="images/dafarm_14.png" alt="">
+	</div>
+	<div id="main08">
+		<h3>04.</h3>
+		<p>Design Direction</p>
+		<img src="images/dafarm_15.png" alt="">
+	</div>
+	<div id="main09">
+		<div class="main09_in">
+			<h3>05.</h3>
+			<p>Content Wireframe</p>
+			<div class="html-code grid-of-images">
+	      		<div class="popup-gallery">
+					<a class="frame01" title="Content Wireframe" href="images/dafarm_16.png"><img src="images/dafarm_16.png" alt=""></a>
+					<a class="frame02" title="Content Wireframe" href="images/dafarm_17.png"><img src="images/dafarm_17.png" alt=""></a>
+				</div>	
+			</div>
+		</div>	
+	</div>
+	<div id="main10">
+		<h3>06.</h3>
+		<p>GUI / Illustration</p>
+		<img class="Illust" src="images/dafarm_18.png" alt="">
+		<img src="images/dafarm_19.png" alt="">
+	</div>
+	<div id="main11">
+		<h3>07.</h3>
+		<p>Mock-up</p>
+		<img class="stationary" src="images/dafarm_20.png" alt="">
+		<img class="stationary" src="images/dafarm_21.jpg" alt="">
+		<img src="images/dafarm_22.jpg" alt="">
+		<img src="images/dafarm_23.jpg" alt="">
+		<img class="phone_app" src="images/dafarm_24.png" alt="">
+	</div>
+	<div id="main12">
+		<h3>08.</h3>
+		<p>Web Design</p>
+		<div class="html-code grid-of-images">
+	      	<div class="popup-gallery">
+				<a class="web_link01" title="Main Page" href="images/df_madal_whole1.jpg"><img class="farmWeb01" src="images/dafarm_25.png" alt=""></a>
+				<a class="web_link02" title="Sub1 제품상세페이지" href="images/df_madal_whole2.jpg"><img src="images/dafarm_28.png" alt=""></a>
+				<a class="web_link03" title="Sub2 매장찾기" href="images/df_madal_whole3.jpg"><img class="farmWeb03" src="images/dafarm_27.png" alt=""></a>
+				<a class="web_link04" title="Sub3 제품카테고리" href="images/df_madal_whole4.jpg"><img class="farmWeb04" src="images/dafarm_26.png" alt=""></a>
+			</div>
+		</div>		
+	</div>
+	<div id="main13">
+		<a class="view_web" target="_blank" href="http://jaynee974.dothome.co.kr/dafarm/">View Website</a>
+		<a class="view_mobileWeb" target="_blank" href="http://jaynee974.dothome.co.kr/m_dafarm/">View Mobile Web</a>
+		<a href="#" class="top_btn">
+			<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
+				<g>
+					<polygon style="fill:#3a4a58;" points="1.414,14.535 4.242,11.707 24.828,32.292 45.414,11.707 48.242,14.535 24.828,37.95 	"/>
+					<path style="fill:#3a4a58;" d="M24.828,39.364L0,14.536l4.242-4.242l20.586,20.585l20.586-20.586l4.242,4.242L24.828,39.364z
+						 M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
+				</g>
+			</svg>
+		</a>
+	</div>
+</div>
+</body>
+</html>

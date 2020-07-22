@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>이지은 포트폴리오</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
+<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+<link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="logo-ver2.ico">
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/svgicons-config.js"></script>
+<script src="js/svgicons.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(document).ready(function(){
+	//메인비주얼 메뉴 버튼 색변화
+    $(window).scroll(function(e){
+		num=$(this).scrollTop();
+			e.preventDefault();
+		if(num<=700){
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
+		} else {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+		}
+	});	
+	
+	//메인비주얼 시작 애니메이션
+	$('.main_visual>p, .main_visual h3,.si-icons, .menu-wrap, .main_visual svg').hide();
+
+	setInterval(function(){
+    $('.main_visual>p').fadeIn(1800)},600);
+
+    setInterval(function(){
+    $('.main_visual h3').fadeIn(1800)},3000);
+
+    setInterval(function(){
+    $('.si-icons, .menu-wrap,.main_visual svg').fadeIn(2000)},600);
+
+
+    //메인비주얼 스크롤
+    $(".main_visual svg").click(function() {
+	    $("body,html").animate({scrollTop: $('#main').offset().top}, 1000,'easeInOutCubic');
+	    return false;
+	});	
+});
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>HOME</span></a>
+				<a href="index.html#main"><i class="fa fa-fw fa-bell-o"></i><span>MY WORK</span></a>
+				<a href="about_me.html"><i class="fa fa-fw fa-envelope-o"></i><span>ABOUT ME</span></a>
+			</div>
+		</nav>
+	</div>
+	<section class="si-icons si-icons-easing" id="open-button">
+		<span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+	</section>
+	<script>
+		(function() {
+			// initialize all
+			
+			[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+				var svgicon = new svgIcon( el, svgIconConfig );
+			} );
+			new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+		})();
+	</script>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/main.js"></script>
+<div class="main_visual">
+	<p>REJINA</p>
+	<h3>HELLO, MY NAME IS <span>REJINA JIEUN LEE</span>
+	<br><span class="mtxt2">I’M A CREATIVE DESIGNER &amp; WEB DEVELOPTER</span></h3>
+	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
+		<g>
+			<polygon style="fill:#fff;" points="1.414,14.535 4.242,11.707 24.828,32.292 45.414,11.707 48.242,14.535 24.828,37.95 	"/>
+			<path style="fill:#fff;" d="M24.828,39.364L0,14.536l4.242-4.242l20.586,20.585l20.586-20.586l4.242,4.242L24.828,39.364z
+				 M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
+		</g>
+	</svg>
+</div>
+<div id="main">
+	<div class="tab_main">
+		<section>
+			<div class="tabs tabs-style-iconfall">
+				<nav>
+					<ul>
+						<li><a href="#section-iconfall-1" class="icon icon-home"><span>ALL</span></a></li>
+						<li><a href="#section-iconfall-2" class="icon icon-home"><span>WEB</span></a></li>
+						<li><a href="#section-iconfall-3" class="icon icon-gift"><span>UI/UX</span></a></li>
+						<li><a href="#section-iconfall-4" class="icon icon-upload"><span>BRANDING</span></a></li>
+						<li><a href="#section-iconfall-5" class="icon icon-coffee"><span>PACKAGE</span></a></li>
+						<li><a href="#section-iconfall-6" class="icon icon-config"><span>EDITORIAL</span></a></li>
+						<li><a href="#section-iconfall-7" class="icon icon-config"><span>ETC</span></a></li>
+					</ul>
+				</nav>
+				<div class="contents-wrap">
+					<section id="section-iconfall-1">
+						<a class="conbox" href="dafarm.html">
+							<h3><img src="images/main_thumbs01.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;WEB&nbsp;&nbsp;UI/UX</h5>
+								<h4>내 손안의 그린농장 다팜<span>DA FARM</span></h4>
+							</div>
+						</a>
+						<a class="conbox con02" href="coffeebean.html">
+							<h3><img src="images/main_thumbs02.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">REDESIGN&nbsp;&nbsp;WEB</h5>
+								<h4>카페 커피빈<span>Cafe Coffee bean</span></h4>
+							</div>
+						</a>
+						<a class="conbox con03" href="tbsefm.html">
+							<h3><img src="images/main_thumbs03.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">UI/UX&nbsp;&nbsp;GUI&nbsp;&nbsp;GRAPHIC</h5>
+								<h4>교통방송 eFM 디지털매거진<span>tbs eFM Digital Magazine Application</span></h4>
+							</div>
+						</a>
+						<a class="conbox con04" href="lesportsac.html">
+							<h3><img src="images/main_thumbs04.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">WEB&nbsp;&nbsp;PUBLISHING</h5>
+								<h4>레스포색<span>Lesportsac</span></h4>
+							</div>
+						</a>
+						<a class="conbox con05" href="asan.html">
+							<h3><img src="images/main_thumbs12.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">WEB&nbsp;&nbsp;PUBLISHING</h5>
+								<h4>아산병원 모바일 웹<span>Asan Medical Center Mobile Web</span></h4>
+							</div>
+						</a>
+						<a class="conbox con06" href="minju.html">
+							<h3><img src="images/main_thumbs05.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING</h5>
+								<h4>민주언론시민연합<span>Citizens’s coalition for democratic media</span></h4>
+							</div>
+						</a>
+						<a class="conbox con07" href="fontana.html">
+							<h3><img src="images/main_thumbs06.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">REPACKAGING</h5>
+								<h4>폰타나스프<span>Fontana Soup</span></h4>
+							</div>
+						</a>
+						<a class="conbox con08" href="selction.html">
+							<h3><img src="images/main_thumbs07.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;REPACKAGING</h5>
+								<h4>아이스크림 셀렉션<span>Ice cream Selction</span></h4>
+							</div>
+						</a>
+						<a class="conbox con09" href="hopestore.html">
+							<h3><img src="images/main_thumbs08.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">EDITORIAL</h5>
+								<h4>아름다운재단 희망가게<span>Hope Store Team, The Beautiful foundation</span></h4>
+							</div>
+						</a>
+						<a class="conbox con10" href="beautiful_intro.html">
+							<h3><img src="images/main_thumbs09.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">EDITORIAL</h5>
+								<h4>아름다운재단 소개책자<span>The Beautiful foundation</span></h4>
+							</div>
+						</a>
+						<a class="conbox con11" href="seongonguniv.html">
+							<h3><img src="images/main_thumbs10.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;EDITORIAL</h5>
+								<h4>성공회대학교 선거캠프 '엄마'<span>Sungkonghoe University, Election camp 'Mother'</span></h4>
+							</div>
+						</a>
+						<a class="conbox con12" href="3dwork.html">
+							<h3><img src="images/main_thumbs11.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">ETC</h5>
+								<h4>3D 아트 &amp; 캐릭터<span>3D Art &amp; Character</span></h4>
+							</div>
+						</a>
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</section>
+					<section id="section-iconfall-2">
+						<a class="conbox" href="dafarm.html">
+							<h3><img src="images/main_thumbs01.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;WEB&nbsp;&nbsp;UI/UX</h5>
+								<h4>내 손안의 그린농장 다팜<span>DA FARM</span></h4>
+							</div>
+						</a>
+						<a class="conbox con02" href="coffeebean.html">
+							<h3><img src="images/main_thumbs02.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">REDESIGN&nbsp;&nbsp;WEB</h5>
+								<h4>카페 커피빈<span>Cafe Coffee bean</span></h4>
+							</div>
+						</a>
+						<a class="conbox con03" href="lesportsac.html">
+							<h3><img src="images/main_thumbs04.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">WEB&nbsp;&nbsp;PUBLISHING</h5>
+								<h4>레스포색<span>Lesportsac</span></h4>
+							</div>
+						</a>
+						<a class="conbox con04" href="asan.html">
+							<h3><img src="images/main_thumbs12.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">WEB&nbsp;&nbsp;PUBLISHING</h5>
+								<h4>아산병원 모바일 웹<span>Asan Medical Center Mobile Web</span></h4>
+							</div>
+						</a>
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</section>
+					<section id="section-iconfall-3">
+						<a class="conbox" href="dafarm.html">
+							<h3><img src="images/main_thumbs01.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;WEB&nbsp;&nbsp;UI/UX</h5>
+								<h4>내 손안의 그린농장 다팜<span>DA FARM</span></h4>
+							</div>
+						</a>
+						<a class="conbox con03" href="tbsefm.html">
+							<h3><img src="images/main_thumbs03.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">UI/UX&nbsp;&nbsp;GUI&nbsp;&nbsp;GRAPHIC</h5>
+								<h4>교통방송 eFM 디지털매거진<span>tbs eFM Digital Magazine Application</span></h4>
+							</div>
+						</a>
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</section>
+					<section id="section-iconfall-4">
+						<a class="conbox" href="dafarm.html">
+							<h3><img src="images/main_thumbs01.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;WEB&nbsp;&nbsp;UI/UX</h5>
+								<h4>내 손안의 그린농장 다팜<span>DA FARM</span></h4>
+							</div>
+						</a>
+						<a class="conbox con05" href="minju.html">
+							<h3><img src="images/main_thumbs05.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING</h5>
+								<h4>민주언론시민연합<span>Citizens’s coalition for democratic media</span></h4>
+							</div>
+						</a>
+						<a class="conbox con07" href="selction.html">
+							<h3><img src="images/main_thumbs07.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;REPACKAGING</h5>
+								<h4>아이스크림 셀렉션<span>Ice cream Selction</span></h4>
+							</div>
+						</a>
+						<a class="conbox con10" href="seongonguniv.html">
+							<h3><img src="images/main_thumbs10.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;EDITORIAL</h5>
+								<h4>성공회대학교 선거캠프 '엄마'<span>Sungkonghoe University, Election camp 'Mother'</span></h4>
+							</div>
+						</a>
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</section>
+					<section id="section-iconfall-5">
+						<a class="conbox con06" href="fontana.html">
+							<h3><img src="images/main_thumbs06.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">REPACKAGING</h5>
+								<h4>폰타나스프<span>Fontana Soup</span></h4>
+							</div>
+						</a>
+						<a class="conbox con07" href="selction.html">
+							<h3><img src="images/main_thumbs07.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;REPACKAGING</h5>
+								<h4>아이스크림 셀렉션<span>Ice cream Selction</span></h4>
+							</div>
+						</a>
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</section>
+					<section id="section-iconfall-6">
+						<a class="conbox con08" href="hopestore.html">
+							<h3><img src="images/main_thumbs08.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">EDITORIAL</h5>
+								<h4>아름다운재단 희망가게<span>Hope Store Team, The Beautiful foundation</span></h4>
+							</div>
+						</a>
+						<a class="conbox con09" href="beautiful_intro.html">
+							<h3><img src="images/main_thumbs09.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">EDITORIAL</h5>
+								<h4>아름다운재단 소개책자<span>The Beautiful foundation</span></h4>
+							</div>
+						</a>
+						<a class="conbox con10" href="seongonguniv.html">
+							<h3><img src="images/main_thumbs10.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;EDITORIAL</h5>
+								<h4>성공회대학교 선거캠프 '엄마'<span>Sungkonghoe University, Election camp 'Mother'</span></h4>
+							</div>
+						</a>
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</section>
+					<section id="section-iconfall-7">
+						<a class="conbox con11" href="3dwork.html">
+							<h3><img src="images/main_thumbs11.jpg" alt=""></h3>
+							<div class="con_tit">
+								<h5 class="txt_cover">ETC</h5>
+								<h4>3D 아트 &amp; 캐릭터<span>3D Art &amp; Character</span></h4>
+							</div>
+						</a>
+						<div class="line1"></div>
+						<div class="line2"></div>
+					</section>
+				</div>
+			</div>
+		</section>
+	</div>
+	<a href="about_me.html" class="about">ABOUT ME</a>
+	<a href="#" class="top_btn">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
+			<g>
+				<polygon style="fill:#3a4a58;" points="1.414,14.535 4.242,11.707 24.828,32.292 45.414,11.707 48.242,14.535 24.828,37.95 	"/>
+				<path style="fill:#3a4a58;" d="M24.828,39.364L0,14.536l4.242-4.242l20.586,20.585l20.586-20.586l4.242,4.242L24.828,39.364z
+					 M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
+			</g>
+		</svg>
+	</a>
+	<!-- Tab 스크립트 -->
+	<script src="js/cbpFWTabs.js"></script>
+	<script>
+		(function() {
+
+			[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+				new CBPFWTabs( el );
+			});
+
+		})();
+	</script>
+	<!--Tab -->
+</div>
+</body>
+</html>

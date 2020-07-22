@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>이지은 포트폴리오</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/svgicons-config.js"></script>
+<script src="js/svgicons.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(document).ready(function(){
+	//메인비주얼 메뉴 버튼 색변화 (처음에만 보이고 나중에 가리기, 마우스 올리면 나타나기)
+	$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		$('#snb>ul>li').mouseenter(function(){
+			$('#snb>ul>li').stop().animate({opacity: '1'}, 200)
+		});
+		$('#snb>ul>li').mouseleave(function(){
+			$('#snb>ul>li').stop().animate({opacity: '0'}, 200)
+		});
+
+    $(window).scroll(function(e){
+		num=$(this).scrollTop();
+			e.preventDefault();
+		if(num>=0 && num<760){
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		} else if(num>=760 && num<1200) {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'1'},50);
+			$('#snb>ul>li>a').css({'color':'#1a2733'});
+			$('#snb>ul>li>ul>li a').css({'color':'#a4aeb6'});
+
+		} else {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		}
+	});
+});	
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>HOME</span></a>
+				<a href="index.html#main"><i class="fa fa-fw fa-bell-o"></i><span>MY PROJECT</span></a>
+				<a href="about_me.html"><i class="fa fa-fw fa-envelope-o"></i><span>ABOUT ME</span></a>
+			</div>
+		</nav>
+	</div>
+	<section class="si-icons si-icons-easing" id="open-button">
+		<span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+	</section>
+	<script>
+		(function() {
+			// initialize all
+			
+			[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+				var svgicon = new svgIcon( el, svgIconConfig );
+			} );
+			new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+		})();
+	</script>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/main.js"></script>
+<div id="snb">
+	<ul>
+		<li class="snb01"><a href="#main00">PROJECT</a></li>
+		<li class="snbBic01"><a href="#main01">The Brief</a>
+		</li>
+		<li class="snbBic02"><a href="#main02">Insperation</a>
+		</li>
+		<li class="snb02"><a href="#main05">Brand Guideline</a>
+			<ul>
+				<li><a href="#minju01">Symbol Mark</a></li>
+				<li><a href="#minju02">Structure</a></li>
+				<li><a href="#minju03">Variation</a></li>
+				<li><a href="#minju04">Color</a></li>
+				<li><a href="#minju05">Font</a></li>
+			</ul>
+		</li>
+		<li class="snbBic03"><a href="#main06">Stationary</a>
+		</li>
+		<li class="snb_back"><a href="index.html#main">BACK TO WORK</a></li>
+	</ul>
+</div>
+<div id="main">
+	<img src="images/thumbs_big05.jpg" alt="">
+	<div id="main00">
+		<h2>민주언론시민연합</h2>
+		<h3>Citizens’s coalition for democratic media</h3>
+		<p>민주언론시민연합의 브랜드를 새로 구축하여새로운 CI를 리디자인하였다</p>
+		<table>
+			<tr class="strong">
+				<td>PERSONAL PROJECT</td>
+				<td>DATE</td>
+			</tr>
+			<tr>
+				<td>Rebranding</td>
+				<td>2013. 11.</td>
+			</tr>
+			<tr>
+				<td>Graphic Design</td>
+			</tr>
+		</table>
+	</div>
+	<div class="minju">
+		<div id="main01">
+			<h3>01.</h3>
+			<p>The Brief</p>
+			<p class="long_txt">민주언론시민연합(Citizens’s coalition for democratic media)은 언론민주화를 모토로한 대한민국의 NGO(Non-Governmental Organization)단체이다. '언론개혁, 시민의힘으로'라는 슬로건으로 언론의 자유와 민족의 공동체적 삶의 가치구현에 앞장서 사회발전에 이바지함을 목적으로 한다.</p>
+			<img class="s_img" src="images/minju01.png" alt="">
+		</div>
+	</div>	
+	<div id="main02">
+		<h3>02.</h3>
+		<p>Insperation</p>
+		<img class="minju02_img" src="images/minju02.png" alt="">
+	</div>
+	<div id="main05">
+		<h3>03.</h3>
+		<p>Brand Guideline</p>
+		<h4 id="minju01">1) Symbol Mark</h4>
+		<img class="normal_img" src="images/minju03.png" alt="">
+		<h4 id="minju02" class="minju_h4">2) Structure</h4>
+		<img class="normal_img2" src="images/minju04.png" alt="">
+		<img class="s_img" src="images/minju05.png" alt="">
+		<h4 id="minju03" class="minju_h4">3) Variation</h4>
+		<img class="normal_img" src="images/minju06.png" alt="">
+		<h4 id="minju04" class="minju_h4">4) Color</h4>
+		<img class="normal_img" src="images/minju07.png" alt="">
+		<h4 id="minju05" class="minju_h4">5) Font</h4>
+		<img class="normal_img2" src="images/minju08.png" alt="">
+	</div>
+	<div id="main06">
+		<h3>04.</h3>
+		<p>Stationary</p>
+		<img class="normal_img" src="images/minju09.png" alt="">
+		<img class="l_img" src="images/minju10.jpg" alt="">
+		<img class="r_img" src="images/minju11.png" alt="">
+	</div>
+	<a href="#" class="top_btn">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
+			<g>
+				<polygon style="fill:#3a4a58;" points="1.414,14.535 4.242,11.707 24.828,32.292 45.414,11.707 48.242,14.535 24.828,37.95 	"/>
+				<path style="fill:#3a4a58;" d="M24.828,39.364L0,14.536l4.242-4.242l20.586,20.585l20.586-20.586l4.242,4.242L24.828,39.364z
+					 M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
+			</g>
+		</svg>
+	</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>이지은 포트폴리오</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/svgicons-config.js"></script>
+<script src="js/svgicons.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(document).ready(function(){
+	//메인비주얼 메뉴 버튼 색변화 (처음에만 보이고 나중에 가리기, 마우스 올리면 나타나기)
+	$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		$('#snb>ul>li').mouseenter(function(){
+			$('#snb>ul>li').stop().animate({opacity: '1'}, 200)
+		});
+		$('#snb>ul>li').mouseleave(function(){
+			$('#snb>ul>li').stop().animate({opacity: '0'}, 200)
+		});
+
+    $(window).scroll(function(e){
+		num=$(this).scrollTop();
+			e.preventDefault();
+		if(num>=0 && num<760){
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		} else if(num>=760 && num<1200) {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'1'},50);
+			$('#snb>ul>li>a').css({'color':'#1a2733'});
+			$('#snb>ul>li>ul>li a').css({'color':'#a4aeb6'});
+
+		} else {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		}
+	});
+});	
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>HOME</span></a>
+				<a href="index.html#main"><i class="fa fa-fw fa-bell-o"></i><span>MY PROJECT</span></a>
+				<a href="about_me.html"><i class="fa fa-fw fa-envelope-o"></i><span>ABOUT ME</span></a>
+			</div>
+		</nav>
+	</div>
+	<section class="si-icons si-icons-easing" id="open-button">
+		<span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+	</section>
+	<script>
+		(function() {
+			// initialize all
+			
+			[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+				var svgicon = new svgIcon( el, svgIconConfig );
+			} );
+			new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+		})();
+	</script>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/main.js"></script>
+<div id="snb">
+	<ul>
+		<li class="snb01"><a href="#main00">PROJECT</a></li>
+		<li class="snbBic01"><a href="#main05">3D ART</a>
+			<ul>
+				<li><a href="#ch3d01">ABOVE THE CLOUDS</a></li>
+				<li><a href="#ch3d02">THE FINE TREE</a></li>
+				<li><a href="#ch3d03">REGO</a></li>
+				<li><a href="#ch3d04">THE ISLAND</a></li>
+			</ul>
+		</li>
+		<li class="snb02"><a href="#main06">CHARACTER</a>
+			<ul>
+				<li><a href="#ch3d05">MIRAEASSET ATO</a></li>
+				<li><a href="#ch3d06">SKYRANCH ALTO</a></li>
+			</ul>
+		</li>
+		<li class="snb_back"><a href="index.html#main">BACK TO WORK</a></li>
+	</ul>
+</div>
+<div id="main">
+	<img src="images/thumbs_big11.jpg" alt="">
+	<div id="main00">
+		<h2>3D 아트 &amp; 캐릭터</h2>
+		<h3>3D ART &amp; CHARACTER</h3>
+		<p>블렌더 3D를 이용한 개인 3D 작업물과 캐릭터 일러스트</p>
+		<table>
+			<tr class="strong">
+				<td>PERSONAL PROJECT</td>
+				<td>DATE</td>
+			</tr>
+			<tr>
+				<td>3D</td>
+				<td>2016. 02. - 2016. 05.</td>
+			</tr>
+			<tr>
+				<td>Illustration</td>
+			</tr>
+		</table>
+	</div>
+	<div id="main05">
+		<h3>03.</h3>
+		<p class="ch3dtit01">3D ART</p>
+		<h4 id="ch3d01" class="ch3dpaddtop">1) Above the clouds</h4>
+		<p class="long_txt3">블렌더 3D로 모델링, 렌더링 후 포토샵 리터칭</p>
+		<img class="img3d_big" src="images/3dcharacter01.png" alt="">
+		<img class="img3d_big" src="images/3dcharacter02.png" alt="">
+		<img class="img3d_big" src="images/3dcharacter03.png" alt="">
+		<h4 id="ch3d02" class="ch3dpaddtop">2) The fine tree</h4>
+		<p class="long_txt3">블렌더 3D로 모델링, 렌더링 후 포토샵 리터칭</p>
+		<img class="img3d_big" src="images/3dcharacter04.png" alt="">
+		<img class="img3d_big" src="images/3dcharacter05.png" alt="">
+		<h4 id="ch3d03" class="ch3dpaddtop">3) Rego</h4>
+		<p class="long_txt3">블렌더 3D로 모델링, 렌더링</p>
+		<img class="img3d_big" src="images/3dcharacter06.png" alt="">
+		<img class="img3d_big" src="images/3dcharacter07.png" alt="">
+		<h4 id="ch3d04" class="ch3dpaddtop">4) The island</h4>
+		<p class="long_txt3">블렌더 3D로 모델링, 렌더링 후 포토샵 리터칭</p>
+		<img class="img3d_big" src="images/3dcharacter08.png" alt="">
+		<img class="img3d_big" src="images/3dcharacter09.png" alt="">
+	</div>
+	<div id="main06">
+		<h3>02.</h3>
+		<p class="ch3dtit01">Character</p>
+		<h4 id="ch3d05" class="ch3dpaddtop">1) 미래에셋 공모전, 희망과 사랑을 전하는 ‘아토’</h4>
+		<p class="long_txt3">선물의 순우리말, 바로 ‘아토’ 입니다. ‘아토’는 고객님께 희망과 사랑을 선물하는 전달자입니다. 고객님과의 소통은 머리 위의 안테나뿔로 이루어집니다. ‘사랑’, ‘환영’, ‘행복’을 포함한 모든 즐거움을 전달하는 귀엽고 야무진 캐릭터이지요.  공중에 떠있는 몸은 고객님이 곤란한 상황에 처했을 때 빠르게 달려가기 위함이기도 하지요. 아주 기특하고 착한 아이입니다. 아토의 몸에는 Love age가 있습니다. 미래에셋이 고객의 나이를 사랑하는 마음, 바로 몸 가운데 보이는 ‘Heart’입니다. 이처럼 아토는 언제나 인생의 동반자로서, 고객님께 ‘사랑’을 선물하는 캐릭터가 될 것입니다.</p>
+		<img class="img3d_big" src="images/3dcharacter10.png" alt="">
+		<h4 id="ch3d06" class="ch3dpaddtop">2) 대관령 하늘목장 개구쟁이 양 ‘알토’</h4>
+		<p class="long_txt3">알토의 이름은 Altocumulus, 양떼구름을 뜻하는 고적운에서 비롯되었습니다. 알토의 보송보송한 털은 마치 하늘목장의 구름처럼 보이기도 합니다. 구름의 자유분방함, 깨끗함은 하늘목장의 푸르름을 더합니다. 하늘목장으로 오세요! 하늘목장의 구름, 알토가 여러분을 반겨줄 것입니다.</p>
+		<img class="img3d_big" src="images/3dcharacter11.png" alt="">
+	</div>
+	<a href="#" class="top_btn">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
+			<g>
+				<polygon style="fill:#3a4a58;" points="1.414,14.535 4.242,11.707 24.828,32.292 45.414,11.707 48.242,14.535 24.828,37.95 	"/>
+				<path style="fill:#3a4a58;" d="M24.828,39.364L0,14.536l4.242-4.242l20.586,20.585l20.586-20.586l4.242,4.242L24.828,39.364z
+					 M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
+			</g>
+		</svg>
+	</a>
+</div>
+</body>
+</html>

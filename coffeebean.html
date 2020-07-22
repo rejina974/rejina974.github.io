@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>이지은 포트폴리오</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/svgicons-config.js"></script>
+<script src="js/svgicons.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(document).ready(function(){
+	//메인비주얼 메뉴 버튼 색변화 (처음에만 보이고 나중에 가리기, 마우스 올리면 나타나기)
+	$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		$('#snb>ul>li').mouseenter(function(){
+			$('#snb>ul>li').stop().animate({opacity: '1'}, 200)
+		});
+		$('#snb>ul>li').mouseleave(function(){
+			$('#snb>ul>li').stop().animate({opacity: '0'}, 200)
+		});
+
+    $(window).scroll(function(e){
+		num=$(this).scrollTop();
+			e.preventDefault();
+		if(num>=0 && num<760){
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		} else if(num>=760 && num<1200) {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'1'},50);
+			$('#snb>ul>li>a').css({'color':'#1a2733'});
+			$('#snb>ul>li>ul>li a').css({'color':'#a4aeb6'});
+
+		} else {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		}
+	});
+});	
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>HOME</span></a>
+				<a href="index.html#main"><i class="fa fa-fw fa-bell-o"></i><span>MY PROJECT</span></a>
+				<a href="about_me.html"><i class="fa fa-fw fa-envelope-o"></i><span>ABOUT ME</span></a>
+			</div>
+		</nav>
+	</div>
+	<section class="si-icons si-icons-easing" id="open-button">
+		<span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+	</section>
+	<script>
+		(function() {
+			// initialize all
+			
+			[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+				var svgicon = new svgIcon( el, svgIconConfig );
+			} );
+			new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+		})();
+	</script>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/main.js"></script>
+<div id="snb">
+	<ul>
+		<li class="snb01"><a href="#main00">PROJECT</a></li>
+		<li class="snbBic01"><a href="#main01">The Brief</a>
+		</li>
+		<li class="snbBic02"><a href="#main02">Website</a>
+			<ul>
+				<li><a href="#main02">Original</a></li>
+				<li><a href="#rede">Redesign</a></li>
+			</ul>
+		</li>
+		<li class="snb_back"><a href="index.html#main">BACK TO WORK</a></li>
+	</ul>
+</div>
+<div id="main">
+	<img src="images/thumbs_big02.jpg" alt="">
+	<div id="main00">
+		<h2>카페 커피빈</h2>
+		<h3>Cafe Coffeebean</h3>
+		<p>카페 커피빈의 웹사이트 메인페이지 리디자인</p>
+		<table>
+			<tr class="strong">
+				<td>PERSONAL PROJECT</td>
+				<td>DATE</td>
+			</tr>
+			<tr>
+				<td>Branding</td>
+				<td>2016. 04. 20. - 2016. 04. 21.</td>
+			</tr>
+			<tr>
+				<td>Web Design</td>
+			</tr>
+		</table>
+	</div>
+	<div id="main01">
+		<h3>01.</h3>
+		<p>The Brief</p>
+		<p class="long_txt">커피빈은 우리나라 커피브랜드 선호도에 6위를 차지했던 만큼 대중적인 브랜드이다. 하지만 웹사이트는 매우 올드한 디자인과 사용성을 고려하지 않은 UI로 이에 대조되어 보여진다. 그러므로 트렌드에 맞는 디자인과 좀 더 직관적인 UI를 사용하여 웹사이트를 디자인하였다.</p>
+	</div>
+	<div id="main02">
+		<h3>02.</h3>
+		<p>Website</p>
+		<h4>1) Original</h4>
+		<img src="images/sub_coffee01.png" alt="">
+		<h4 id="rede">2) Redesign</h4>
+		<p class="long_txt">메인 창을 꽉 채우는 라지이미지로 커피를 내리는 모습, 커피 원두를 보여주어 의미를 전달하도록 디자인하였다. 반면에 오버레이한 배경 가운데에 UI를 흐르듯이 배치하여 각 섹션이 넘어갈때마다 사용자가 UI를 한눈에 볼 수 있도록 하였다.</p>
+		<img src="images/sub_coffee05.png" alt="">
+		<img src="images/sub_coffee06.png" alt="">
+		<img src="images/sub_coffee07.png" alt="">
+		<img src="images/sub_coffee08.png" alt="">
+	</div>
+	<a href="#" class="top_btn">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
+			<g>
+				<polygon style="fill:#3a4a58;" points="1.414,14.535 4.242,11.707 24.828,32.292 45.414,11.707 48.242,14.535 24.828,37.95 	"/>
+				<path style="fill:#3a4a58;" d="M24.828,39.364L0,14.536l4.242-4.242l20.586,20.585l20.586-20.586l4.242,4.242L24.828,39.364z
+					 M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
+			</g>
+		</svg>
+	</a>
+</div>
+</body>
+</html>

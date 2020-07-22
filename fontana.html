@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>이지은 포트폴리오</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/menu_topexpand.css" />
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+<link href="css/sub.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/svgicons-config.js"></script>
+<script src="js/svgicons.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(document).ready(function(){
+	//메인비주얼 메뉴 버튼 색변화 (처음에만 보이고 나중에 가리기, 마우스 올리면 나타나기)
+	$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		$('#snb>ul>li').mouseenter(function(){
+			$('#snb>ul>li').stop().animate({opacity: '1'}, 200)
+		});
+		$('#snb>ul>li').mouseleave(function(){
+			$('#snb>ul>li').stop().animate({opacity: '0'}, 200)
+		});
+
+    $(window).scroll(function(e){
+		num=$(this).scrollTop();
+			e.preventDefault();
+		if(num>=0 && num<760){
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		} else if(num>=760 && num<1200) {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'1'},50);
+			$('#snb>ul>li>a').css({'color':'#1a2733'});
+			$('#snb>ul>li>ul>li a').css({'color':'#a4aeb6'});
+
+		} else {
+			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
+			$('#snb>ul>li').stop().animate({opacity:'0'},50);
+		}
+	});
+});	
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="menu-wrap">
+		<nav class="menu">
+			<div class="icon-list">
+				<a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>HOME</span></a>
+				<a href="index.html#main"><i class="fa fa-fw fa-bell-o"></i><span>MY PROJECT</span></a>
+				<a href="about_me.html"><i class="fa fa-fw fa-envelope-o"></i><span>ABOUT ME</span></a>
+			</div>
+		</nav>
+	</div>
+	<section class="si-icons si-icons-easing" id="open-button">
+		<span class="si-icon si-icon-hamburger-cross" data-icon-name="hamburgerCross"></span>
+	</section>
+	<script>
+		(function() {
+			// initialize all
+			
+			[].slice.call( document.querySelectorAll( '.si-icons-default > .si-icon' ) ).forEach( function( el ) {
+				var svgicon = new svgIcon( el, svgIconConfig );
+			} );
+			new svgIcon( document.querySelector( '.si-icons-easing .si-icon-hamburger-cross' ), svgIconConfig, { easing : mina.elastic, speed: 600 } );
+		})();
+	</script>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/main.js"></script>
+<div id="snb">
+	<ul>
+		<li class="snb01"><a href="#main00">PROJECT</a></li>
+		<li class="snbBic01"><a href="#main01">The Brief</a>
+		</li>
+		<li class="snbBic02"><a href="#main02">Identity</a>
+		</li>
+		<li class="snb02"><a href="#main05">Brand Guideline</a>
+			<ul>
+				<li><a href="#fontana01">Color</a></li>
+				<li><a href="#fontana02">Font</a></li>
+				<li><a href="#fontana03">Form</a></li>
+				<li><a href="#fontana04">Package</a></li>
+			</ul>
+		</li>
+		<li class="snb_back"><a href="index.html#main">BACK TO WORK</a></li>
+	</ul>
+</div>
+<div id="main">
+	<img src="images/thumbs_big06.jpg" alt="">
+	<div id="main00">
+		<h2>폰타나스프</h2>
+		<h3>Fontana Soup</h3>
+		<p>폰타나스프의 아이덴티티를 재정립하여 제작한 리패키징</p>
+		<table>
+			<tr class="strong">
+				<td>PERSONAL PROJECT</td>
+				<td>DATE</td>
+			</tr>
+			<tr>
+				<td>Repackaging</td>
+				<td>2013. 09.</td>
+			</tr>
+			<tr>
+				<td>Graphic Design</td>
+			</tr>
+		</table>
+	</div>
+	<div class="minju">
+		<div id="main01">
+			<h3>01.</h3>
+			<p>The Brief</p>
+			<p class="long_txt">스프시장에서의 주 소비자층은 한정되어있다. 한국사람들의 주식은 쌀이고 이를 이용한 죽이 더 대중적이다. 그러므로 스프의 주 구매자층은 스프를 즐겨먹거나 죽보다 더 선호하는 사람들이다. 한국에서 스프제품은 연예인이 나오는 광고로 마케팅을 하고 그로 인해 얻는 명성으로 구매력을 증진시킨다. 그러나 지금의 마케팅 형태는 스프의 주 소비층의 구매욕만 자극시킬 수 있게 제한되어 있으므로 모든 소비자층을 대상으로 하는 마케팅이 필요하다. 이로써 웰 메이드 국산 스프 브랜드의 독자성 확보와 동시에 풍부한 맛과 간편성을 극대화 할 수 있도록 디자인 방향을 잡았다.</p>
+		</div>
+	</div>	
+	<div id="main02">
+		<h3>02.</h3>
+		<p>Identity</p>
+		<p class="long_txt">폰타나 스프의 가장 중요한 메시지는 바로 풍부함이다. 풍부한 맛을 표현하기 위한 첫번째 영감은 물(water)이다. 물속에 물방울이 떨어지는 모습으로 하여금 깊이감을 느낄 수 있도록 표현했다. 두번째는 싱싱한 재료이다. 다양한 재료들이 스프를 더 풍부한 맛이 느껴지도록 만들어준다. 이런 생동감 넘치는 재료들이 고루 섞여 탄생한 것이 스프의 물방울이다. 이렇게 풍부하고 다양한 맛을 표현하기 위해 그라데이션 물방울을 메인아이덴티티로 디자인했다. 마찬가지로 스프의 물방울 주변에 맛의 원천인 재료를 넣어서 물방울과 함께 떨어지듯이 생동감있게 표현하였다.</p>
+		<img class="minju02_img" src="images/fontana01.jpg" alt="">
+		<img class="minju02_img" src="images/fontana02.jpg" alt="">
+		<img class="minju02_img" src="images/fontana03.jpg" alt="">
+		<img class="minju02_img" src="images/fontana04.jpg" alt="">
+	</div>
+	<div id="main05">
+		<h3>03.</h3>
+		<p>Brand Guideline</p>
+		<h4 id="fontana01">1) Color</h4>
+		<p class="longtxt_fontana">스프안에 들어가는 주재료의 색을 이용한 그라데이션으로 색채를 적용하였다.</p>
+		<img class="normal_img2" src="images/fontana05.jpg" alt="">
+		<h4 id="fontana02" class="minju_h4">3) Font</h4>
+		<img class="normal_img2" src="images/fontana06.jpg" alt="">
+		<h4 id="fontana03" class="minju_h4">3) Form</h4>
+		<img class="normal_img2" src="images/fontana07.jpg" alt="">
+		<h4 id="fontana04" class="minju_h4">4) Package</h4>
+		<img class="l_img" src="images/fontana08.jpg" alt="">
+		<img class="r_img" src="images/fontana09.jpg" alt="">
+		<img class="l_img" src="images/fontana10.jpg" alt="">
+		<img class="r_img" src="images/fontana11.jpg" alt="">
+	</div>
+	<a href="#" class="top_btn">
+		<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
+			<g>
+				<polygon style="fill:#3a4a58;" points="1.414,14.535 4.242,11.707 24.828,32.292 45.414,11.707 48.242,14.535 24.828,37.95 	"/>
+				<path style="fill:#3a4a58;" d="M24.828,39.364L0,14.536l4.242-4.242l20.586,20.585l20.586-20.586l4.242,4.242L24.828,39.364z
+					 M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
+			</g>
+		</svg>
+	</a>
+</div>
+</body>
+</html>
