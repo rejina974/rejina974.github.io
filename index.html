@@ -24,10 +24,10 @@
 <script>
 $(document).ready(function(){
 	//메인비주얼 메뉴 버튼 색변화
-    $(window).scroll(function(e){
-		num=$(this).scrollTop();
+	$(window).scroll(function(e){
+		num = $(this).scrollTop();
 			e.preventDefault();
-		if(num<=700){
+		if(num <= 700){
 			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.1)'});
 		} else {
 			$('.menu-wrap').css({'background':'rgba(26, 39, 56,.9)'});
@@ -37,14 +37,19 @@ $(document).ready(function(){
 	//메인비주얼 시작 애니메이션
 	$('.main_visual>p, .main_visual h3,.si-icons, .menu-wrap, .main_visual svg').hide();
 
+	// $('.main_visual').css('opacity', 1);
+
 	setInterval(function(){
-    $('.main_visual>p').fadeIn(1800)},600);
+    $('.main_visual>p').fadeIn(1800)
+	}, 600);
 
-    setInterval(function(){
-    $('.main_visual h3').fadeIn(1800)},3000);
+	setInterval(function(){
+    $('.main_visual h3').fadeIn(1800)
+	}, 3000);
 
-    setInterval(function(){
-    $('.si-icons, .menu-wrap,.main_visual svg').fadeIn(2000)},600);
+	setInterval(function(){
+    $('.si-icons, .menu-wrap,.main_visual svg').fadeIn(2000)
+	}, 600);
 
 
     //메인비주얼 스크롤
@@ -83,15 +88,18 @@ $(document).ready(function(){
 <script src="js/classie.js"></script>
 <script src="js/main.js"></script>
 <div class="main_visual">
+	<div class="main_visual__jumbo">
+		<div class="main_visual__jumbo__image"></div>
+	</div>
 	<p>REJINA</p>
 	<h3>HELLO, MY NAME IS <span>REJINA JIEUN LEE</span>
 	<br><span class="mtxt2">I’M A CREATIVE DESIGNER &amp; WEB DEVELOPTER</span></h3>
 	<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
+	viewBox="0 0 49.656 49.656" style="enable-background:new 0 0 49.656 49.656;" xml:space="preserve">
 		<g>
 			<polygon style="fill:#fff;" points="1.414,14.535 4.242,11.707 24.828,32.292 45.414,11.707 48.242,14.535 24.828,37.95 	"/>
 			<path style="fill:#fff;" d="M24.828,39.364L0,14.536l4.242-4.242l20.586,20.585l20.586-20.586l4.242,4.242L24.828,39.364z
-				 M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
+				M2.828,14.536l22,22l22-22.001l-1.414-1.414L24.828,33.707L4.242,13.122L2.828,14.536z"/>
 		</g>
 	</svg>
 </div>
@@ -117,13 +125,6 @@ $(document).ready(function(){
 							<div class="con_tit">
 								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;WEB&nbsp;&nbsp;UI/UX</h5>
 								<h4>내 손안의 그린농장 다팜<span>DA FARM</span></h4>
-							</div>
-						</a>
-						<a class="conbox con02" href="coffeebean.html">
-							<h3><img src="images/main_thumbs02.jpg" alt=""></h3>
-							<div class="con_tit">
-								<h5 class="txt_cover">REDESIGN&nbsp;&nbsp;WEB</h5>
-								<h4>카페 커피빈<span>Cafe Coffee bean</span></h4>
 							</div>
 						</a>
 						<a class="conbox con03" href="tbsefm.html">
@@ -205,13 +206,6 @@ $(document).ready(function(){
 							<div class="con_tit">
 								<h5 class="txt_cover">BRANDING&nbsp;&nbsp;WEB&nbsp;&nbsp;UI/UX</h5>
 								<h4>내 손안의 그린농장 다팜<span>DA FARM</span></h4>
-							</div>
-						</a>
-						<a class="conbox con02" href="coffeebean.html">
-							<h3><img src="images/main_thumbs02.jpg" alt=""></h3>
-							<div class="con_tit">
-								<h5 class="txt_cover">REDESIGN&nbsp;&nbsp;WEB</h5>
-								<h4>카페 커피빈<span>Cafe Coffee bean</span></h4>
 							</div>
 						</a>
 						<a class="conbox con03" href="lesportsac.html">
