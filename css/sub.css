@@ -122,6 +122,24 @@
   font-weight: normal;
 }
 
+#main #main00 a {
+  position: absolute;
+  right: 0;
+  top: 74px;
+  color: #1a2733;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  font-family: "Montserrat";
+  border: 2px solid #1a2733;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+#main #main00 a.view_mobileWeb {
+  top: 130px;
+}
+
 #main #main00 a:hover {
   color: #fff;
   border: 2px solid #1a2733;
